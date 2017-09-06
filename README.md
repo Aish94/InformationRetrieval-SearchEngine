@@ -33,6 +33,9 @@ These documents were extracted from a subset of the Project Gutenberg corpus
 Mapper: maps words to Document ID  
 Reducer: reduces it to word and (Document ID:frequency) index  
 
+Example of inverted index created
+![Alt text](/Screenshots/index.png?raw=true "Extract from the inverted index")
+
 ## Search Engine  
 Built over Solr Search platform to query html documents from the LATimes website  
 http://lucene.apache.org/solr/  
@@ -46,4 +49,11 @@ ExtractLinks.java uses JSoup to extract outgoing links from each document and cr
 pageRank.py uses NetworkX creates a graph from the edge list and calculates the page rank for each document  
 ExtractNewWords.java used to extract all words in the documents which is later used by Peter Norvig's spelling correction algorithm  
 https://www.phpclasses.org/package/4859-PHP-Suggest-corrected-spelling-text-in-pure-PHP.html  
+
+Search Home Page
+![Alt text](/Screenshots/SearchHomePage.png?raw=true "Search Home Page")
+
+Results of query : brexit
+![Alt text](/Screenshots/BrexitResults.png?raw=true "Results of query : brexit")
+
 
